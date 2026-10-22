@@ -1,0 +1,33 @@
+# Training data and generated artifacts
+runs/
+dataset/
+datasets/
+data/
+weights/
+outputs/
+
+# Model and tensor files
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.hdf5
+
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments, editors, and logs
+.venv/
+venv/
+.vscode/
+.idea/
+*.log
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+

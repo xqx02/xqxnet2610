@@ -1,0 +1,43 @@
+model: plain_conditional_csp_l1_fusion
+# Module strength: CSP alpha_init=0.40, alpha_max=0.50.
+loss: controlfusion_c0_yadapter
+base_channels: 32
+encoder_blocks: [2, 3, 3, 4]
+attention_heads: [1, 2, 4, 8]
+ffn_expansion: 2.66
+data:
+  tensor_dir: ../Fusion/dataset/MSRS/train_tensor
+  raw_train_dir: ../Fusion/dataset/MSRS/train
+  test_dir: ../Fusion/dataset/MSRS/test
+  split_file: configs/splits/msrs_stratified_seed2026.json
+loss_kwargs:
+  intensity_weight: 8.0
+  gradient_weight: 10.0
+  ssim_weight: 1.0
+  color_weight: 12.0
+train:
+  batch_size: 2
+  epochs: 100
+  lr: 0.00008
+  min_lr: 0.0000002
+  weight_decay: 0.0001
+  warmup_epochs: 8
+  grad_accum_steps: 4
+  grad_clip_norm: 0.3
+  save_every: 10
+  seed: 2026
+  split_seed: 2026
+  val_ratio: 0.1
+validation:
+  metric_every: 10
+  protocol: msrs_original_full_resolution_ycrcb_uint8_v1
+  selection_weights:
+    SD: 0.1
+    QABF: 0.3
+    SSIM: 0.3
+    VIF: 0.3
+diagnostics:
+  every: 10
+  train_subset_size: 32
+  seed: 2026
+

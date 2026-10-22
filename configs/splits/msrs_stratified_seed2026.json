@@ -1,0 +1,16 @@
+{
+  "format": "msrs_fixed_validation_names_v1",
+  "description": "Fixed MSRS development split. Train is every train_tensor/vi .pt file not listed in validation_names.",
+  "source_run": "runs/csp_base_stratified/split.json",
+  "val_ratio": 0.1,
+  "split_seed": 2026,
+  "train_count": 975,
+  "val_count": 108,
+  "train_day": 483,
+  "train_night": 492,
+  "val_day": 53,
+  "val_night": 55,
+  "validation_names": [
+    "00003N.pt", "00025N.pt", "00037N.pt", "00038N.pt", "00048N.pt", "00052N.pt", "00086D.pt", "00104D.pt", "00122D.pt", "00125D.pt", "00136D.pt", "00152D.pt", "00153D.pt", "00156D.pt", "00164D.pt", "00181D.pt", "00201D.pt", "00210D.pt", "00219D.pt", "00238D.pt", "00244D.pt", "00288D.pt", "00289D.pt", "00306D.pt", "00309D.pt", "00310D.pt", "00322D.pt", "00360D.pt", "00362D.pt", "00384D.pt", "00439D.pt", "00519D.pt", "00522D.pt", "00539D.pt", "00553D.pt", "00556D.pt", "00560D.pt", "00566D.pt", "00598D.pt", "00625D.pt", "00716N.pt", "00727N.pt", "00763N.pt", "00764N.pt", "00765N.pt", "00775N.pt", "00784N.pt", "00785N.pt", "00788N.pt", "00803N.pt", "00824N.pt", "00845N.pt", "00852N.pt", "00884N.pt", "00891N.pt", "00905N.pt", "00908N.pt", "00929N.pt", "00948N.pt", "00965N.pt", "00983N.pt", "01005N.pt", "01013N.pt", "01023N.pt", "01034N.pt", "01047N.pt", "01091N.pt", "01112N.pt", "01116N.pt", "01125N.pt", "01151N.pt", "01154N.pt", "01165N.pt", "01197N.pt", "01200N.pt", "01207N.pt", "01209N.pt", "01233N.pt", "01252N.pt", "01255N.pt", "01273N.pt", "01309N.pt", "01316N.pt", "01322N.pt", "01324N.pt", "01329N.pt", "01333N.pt", "01334N.pt", "01362N.pt", "01381D.pt", "01398D.pt", "01403D.pt", "01410D.pt", "01457D.pt", "01463D.pt", "01471D.pt", "01472D.pt", "01480D.pt", "01503D.pt", "01507D.pt", "01508D.pt", "01525D.pt", "01536D.pt", "01537D.pt", "01553D.pt", "01564D.pt", "01592D.pt", "01602D.pt"
+  ]
+}
